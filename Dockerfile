@@ -38,5 +38,8 @@ EXPOSE 22
 EXPOSE 3389
 ## Set working directory
 WORKDIR /workdir
-## Set maintainer
-MAINTAINER ${user}
+## Set Label
+LABEL version="1.0"
+LABEL maintainer="niraiarin"
+LABEL description="Kali Linux Container \
+for any usages."
