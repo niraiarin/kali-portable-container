@@ -1,9 +1,10 @@
 name: kali
 services:
   kali:
-    build: .
+    build: 
+      context: .
+      dockerfile: ./Dockerfile
     container_name: kali
-    image: ${USER}/kali:latest
     stdin_open: true
     tty: true
     cap_add:
