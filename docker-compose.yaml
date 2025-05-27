@@ -1,0 +1,20 @@
+name: kali
+services:
+  kali:
+    build: .
+    container_name: kali
+    image: ${USER}/kali:latest
+    stdin_open: true
+    tty: true
+    cap_add:
+      - NET_ADMIN
+    #devices:
+    #  - /dev/net/tun
+    volumes:
+      - ./workdir:/workdir
+    ports:
+      - 2222:22
+      - 53389:3389
+      - 55001:5001
+    #command: 
+    privileged: true
