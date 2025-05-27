@@ -46,4 +46,20 @@ docker-compose up -d
 
 ### SSH
 
+example of ~/.ssh/config:
+
+```config
+Host local.docker.kali
+  HostName localhost
+  Port 2222
+  User bob
+  IdentityFile ~/.ssh/id_e25519
+```
+
+```zsh
+ssh local.docker.kali
+```
+
 ### XRDP
+
+Use [remmina](https://remmina.org/) or Windows Remote Desktop to connect ``localhost:53389``
