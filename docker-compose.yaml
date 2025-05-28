@@ -1,4 +1,4 @@
-name: kali
+name: nirarin-dev
 services:
   kali:
     build: 

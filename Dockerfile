@@ -8,7 +8,7 @@ RUN apt-get update && \
     ln -fs /usr/share/zoneinfo/$TZ /etc/localtime && \
     dpkg-reconfigure --frontend noninteractive tzdata && \
     DEBIAN_FRONTEND=noninteractive apt-get -qq full-upgrade -y && \
-    DEBIAN_FRONTEND=noninteractive apt-get install -y -qq kali-linux-everything iputils-ping glances speedtest-cli iperf wget curl && \
+    DEBIAN_FRONTEND=noninteractive apt-get install -y -qq kali-linux-everything iputils-ping glances speedtest-cli iperf wget && \
     DEBIAN_FRONTEND=noninteractive apt-get install -y -qq kali-desktop-xfce xorg xrdp && \
     apt-get autoremove && \
     apt-get clean && \
